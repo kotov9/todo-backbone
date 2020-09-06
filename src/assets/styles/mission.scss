@@ -1,0 +1,85 @@
+.mission {
+  border: solid 1px #EEE;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 4px 4px 4px 4px #DDD;
+
+  &__info {
+    &__title {
+      margin: 0 0 16px 0;
+      text-align: center;
+      text-decoration: underline;
+    }
+    &__more {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li + li {
+        margin: 12px 0 0 0;
+      }
+    }
+  }
+  .editing {
+    display: flex;
+    img {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  .mission-edit,
+  .mission-remove {
+    display: inline-block;
+    margin: 12px 0 0 12px;
+    opacity: 0.8;
+    text-decoration: underline;
+    cursor: pointer;
+
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .mission-edit {
+    img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .info-item {
+    display: flex;
+    margin-left: 12px;
+    &__title {
+      min-width: 100px;
+    }
+    &__param {
+      font-weight: bold;
+      margin-left: 12px;
+    }
+  }
+  .tasks-list {
+    margin: 10px auto;
+    padding: 16px 5%;
+    border: #eee solid 1px;
+    border-radius: 10px;
+  }
+  &__tasks {
+    &__add {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  .add-task {
+    cursor: pointer;
+    img {
+      width: 14px;
+      height: 14px;
+      opacity: 0.3;
+      transition: all 0.5s ease;
+      &:hover {
+        transform: rotate(90deg);
+        opacity: 0.7;
+      }
+    }
+  }
+}

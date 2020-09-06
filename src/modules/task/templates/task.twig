@@ -1,0 +1,24 @@
+<div class="task__checkbox" data-js="task-check">
+    {% if completed %}
+        <img src="/assets/images/check.svg" alt="check">
+    {% endif %}
+</div>
+{% if completed %}
+    <div class="task__completion-info">
+        *<span>Completion date: {{ completionDate }}</span>
+    </div>
+{% endif %}
+<div class="task__description {{ completed ? 'task__description--completed' : ''}}" data-js="task-check">
+    <span>{{ description }}</span>
+</div>
+<div class="task__controls">
+    <div class="task__edit">
+        <img src="/assets/images/pen.svg" alt="edit">
+    </div>
+    <div class="task__remove">
+        <img src="/assets/images/remove.svg" alt="remove">
+    </div>
+</div>
+
+
+

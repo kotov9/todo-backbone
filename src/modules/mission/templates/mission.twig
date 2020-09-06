@@ -1,0 +1,40 @@
+
+<header class="mission__info">
+    <h2 class="mission__info__title">{{ title }}</h2>
+    <ul class="mission__info__more">
+        <li class="mission__info__description info-item">
+            <div contenteditable="true" class="info-item__title">Description:</div>
+            <div class="info-item__param">{{ description }}</div>
+        </li>
+        <li class="mission__info__author info-item">
+            <div class="info-item__title">Author:</div>
+            <div class="info-item__param">{{ author }}</div>
+        </li>
+        <li class="mission__info__completed info-item mission-progress">
+            <div class="info-item__title">Progress:</div>
+            <div class="info-item__param"><span class="progress">{{ progress|default('0') }}</span>%</div>
+        </li>
+        <li class="mission__info__creation info-item">
+            <div class="info-item__title">Created:</div>
+            <div class="info-item__param">{{ creation }}</div>
+        </li>
+        {% if completed %}
+            <li class="mission__info__completion info-item">
+                <div class="info-item__title">Completed:</div>
+                <div class="info-item__param">{{ completion }}</div></li>
+        {% endif %}
+    </ul>
+    <div class="editing">
+        <div class="mission-edit"><img src="/assets/images/pen.svg" alt="edit"></div>
+        <div class="mission-remove"><img src="/assets/images/remove.svg" alt="remove"></div>
+    </div>
+</header>
+<main class="mission__tasks">
+    <div class="tasks-list">
+        <div class="mission__tasks__add">
+            <span class="add-task">
+                <img src="/assets/images/add.svg" alt="remove">
+            </span>
+        </div>
+    </div>
+</main>

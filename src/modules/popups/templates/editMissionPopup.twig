@@ -1,0 +1,21 @@
+<div class="backdrop"></div>
+<div class="edit-mission-popup popup-body">
+    <div class="wrapper">
+        <span class="label">Title</span>
+        <input autocomplete="off" type="text" class="field popup-input" id="mission-title" data-name="title" value="{{ title }}">
+    </div>
+    <div class="wrapper">
+        <span class="label">Description</span>
+        <div contenteditable="true" class="field popup-input" id="mission-description" data-name="description">{{ description }}</div>
+    </div>
+    <div class="wrapper">
+        <span class="label">Author</span>
+        <input autocomplete="off" type="text" class="field popup-input" id="mission-author" data-name="author" value="{{ author }}">
+    </div>
+    <div class="wrapper">
+        <div class="edit-task-popup__btns">
+            <button class="edit-task-popup__btn edit-task-popup__btn--yes popup-confirm">{{ yes }}</button>
+            <button class="edit-task-popup__btn edit-task-popup__btn--no popup-cancel">{{ no }}</button>
+        </div>
+    </div>
+</div>

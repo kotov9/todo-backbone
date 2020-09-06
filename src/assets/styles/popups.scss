@@ -1,0 +1,151 @@
+.backdrop {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-body {
+  position: fixed;
+  z-index: 100;
+  top: 20%;
+  left: 50%;
+  min-width: 100px;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #FFF;
+  display: block;
+}
+
+.confirm-popup {
+  p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 0;
+  }
+  &__btns {
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #FFF;
+    border-radius: 4px;
+    border: none;
+    padding: 8px;
+    text-align: center;
+    min-width: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &--yes {
+      background-color: lightgreen;
+    }
+    &--no {
+      background-color: lightblue;
+    }
+  }
+}
+
+.edit-task-popup {
+  background-color: #FFF;
+  * + * {
+    margin-top: 12px;
+  }
+  p {
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__btns {
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    margin: 0 3px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 8px;
+    min-width: 60px;
+    background-color: #000;
+    color: #FFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    &:hover {
+      background-color: #EEE;
+      color: #000;
+    }
+  }
+  .task-editable {
+    background-color: white;
+    padding: 12px;
+    outline: none!important;
+    border: 1px #DDD solid;
+    border-radius: 4px;
+    min-width: 600px;
+    max-width: 800px;
+    white-space: pre-wrap;
+    &:focus {
+      border-color: #000;
+    }
+    @media screen and (max-width: 800px) {
+      min-width: 70vw;
+      max-width: 90vw;
+      font-size: 12px
+    }
+  }
+}
+
+.edit-mission-popup {
+  .wrapper {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+
+    min-width: 600px;
+    max-width: 800px;
+    @media screen and (max-width: 800px) {
+      min-width: 70vw;
+      max-width: 90vw;
+      font-size: 12px
+    }
+    .label {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.4em;
+    }
+    .field {
+      margin-top: 8px;
+      max-width: 100%;
+      width: 100%;
+      border: 1px #CCC solid;
+      border-radius: 5px;
+      padding: 8px;
+      outline: none;
+      font-size: 1.2em;
+
+
+      &:focus {
+        border-color: #000;
+      }
+    }
+  }
+}

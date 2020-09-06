@@ -1,0 +1,11 @@
+<div class="backdrop"></div>
+<div class="confirm-popup popup-body">
+    <input type="hidden" data="model-id" value="{{ id|default(null) }}">
+    <p class="confirm-popup__text">
+        {{ text }}
+    </p>
+    <div class="confirm-popup__btns">
+        <button class="confirm-popup__btn confirm-popup__btn--yes popup-confirm">{{ yes }}</button>
+        <button class="confirm-popup__btn confirm-popup__btn--no popup-cancel">{{ no }}</button>
+    </div>
+</div>

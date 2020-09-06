@@ -1,0 +1,33 @@
+<div class="mission-preview__header">
+    <span class="mission-preview__title">{{ title }}</span>
+    <div class="mission-preview__edit mission-edit">
+        <img src="/assets/images/pen.svg" alt="edit">
+    </div>
+    <div class="mission-preview__remove mission-remove">
+        <img src="/assets/images/remove.svg" alt="remove">
+    </div>
+</div>
+
+<ul class="mission-preview__info">
+    <li class="description info-item">
+        <span class="field">Description:</span>
+        <span class="value">{{ description }}</span>
+    </li>
+    {% if progress > -1 %}
+        <li class="progress info-item">
+            <span class="field">Progress:</span>
+            <span class="value">{{ progress }} %</span>
+        </li>
+    {% endif %}
+    <li class="creation info-item">
+        <span class="field">Created:</span>
+        <span class="value">{{ creation }}</span>
+    </li>
+    <li class="author info-item">
+        <span class="field">Author:</span>
+        <span class="value">{{ author }}</span>
+    </li>
+</ul>
+<a href="/missions/{{ id }}" class="see-tasks">
+    <div></div>
+</a>

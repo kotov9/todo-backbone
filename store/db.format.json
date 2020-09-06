@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "projectId": "unique:string",
+      "creation": "date:timestamp",
+      "author": "name:string",
+      "description": "description: string",
+      "tasks": [
+        {
+          "taskId": "unique:string",
+          "description": "text:string",
+          "isCompleted": ":boolean",
+          "completionDate": "date:timestamp"
+        }
+      ]
+    }
+  ]
+}
+
